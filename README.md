@@ -1,4 +1,7 @@
-# AxioShiny
+<img align="right" src="https://github.com/jjsayleraxio/AxioShiny/blob/master/images/axio-logo.png">
+<br><br>
+
+# AxioShiny 
 
 Shiny server built using rocker/shiny-verse and utilizing custom code written at [Axio Research](https://www.axioresearch.com/our-services/3-statistical-genetics-services/).
 
