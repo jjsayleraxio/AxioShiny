@@ -1,4 +1,4 @@
-FROM rocker/shiny-verse:3.5.0
+FROM rocker/shiny-verse:3.5.1
 
 LABEL author="Joseph Sayler" email="josephs@axioresearch.com" company="Axio Research" version="1.1.0"
 
