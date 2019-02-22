@@ -1,4 +1,4 @@
-<img align="right" src="https://github.com/jjsayleraxio/AxioShiny/blob/master/images/axio-logo.png">
+<img align="right" src="https://raw.githubusercontent.com/jjsayleraxio/AxioShiny/master/images/axio-logo.png">
 <br><br>
 
 # AxioShiny 
