@@ -1,3 +1,3 @@
 library(plumber)
-pr<-plumber::plumb("/srv/shiny-server/app/teva/scripts/plumber.R")
+pr<-plumber::plumb(paste0("/srv/shiny-server/app/",Sys.env("PLUMBER"))
 pr$run(host='0.0.0.0',port=40000)
