@@ -8,7 +8,7 @@ RUN Rscript -e "install.packages(c('ggplot2','Cairo','shiny','DBI','RSQLite','pl
   && apt-get update && apt install -y curl vim \
   && curl --raw "https://raw.githubusercontent.com/jjsayleraxio/AxioShiny/devel/files/run.R" > /run.R \
   && curl --raw "https://raw.githubusercontent.com/jjsayleraxio/AxioShiny/devel/files/shiny-server.sh" > /usr/bin/shiny-server.sh \
-  && chmod 755 /usr/bin/shiny-server.sh
-  && echo "APP_SERVER=$APP_SERVER" > /home/shiny/.Renviron
-  && echo "PLUMBER=$PLUMBER" >> /home/shiny/.Renviron
+  && chmod 755 /usr/bin/shiny-server.sh \
+  && echo "APP_SERVER=$APP_SERVER" > /home/shiny/.Renviron \
+  && echo "PLUMBER=$PLUMBER" >> /home/shiny/.Renviron \
   && chown 999:999 /home/shiny/.Renviron
