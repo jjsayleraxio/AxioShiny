@@ -32,6 +32,6 @@ __Explanation of new parameters:__
 * Port ```40000``` is used by Plumber to access the API; without this, all calls to your API will be blocked.
 * 2 environment variables have been added:
   * ```APP_SERVER``` is the name of your public facing server. It can be a domain name, an IP address, http or https. The name must be entered in this format: ```http[s]://[server name or IP]```
-  * ```PLUMBER``` is the location of the plumber.R script relative to the ```/srv/shiny-server/app/``` directory. The plumber.R script is where your API code is located. The name of the file can be anything and the file can be placed anywhere, as long as the path is entered without the leading ```/```
+  * ```PLUMBER``` is the location of the plumber.R script relative to the ```/srv/shiny-server/``` directory. The plumber.R script is where your API code is located. The name of the file can be anything and the file can be placed anywhere, as long as the path is entered without the leading ```/```
 
 For more information about how to use APIs in R, see the [Plumber documentation](https://www.rplumber.io/docs/).
