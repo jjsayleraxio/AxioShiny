@@ -10,7 +10,7 @@ Shiny server built using rocker/shiny-verse and utilizing custom code written at
 First, pull image from Docker Hub. In a target directory, create ```./app``` and ```./logs``` folders. Then, run this command to start the container
 
 ```
-docker run -dit --name=[CONTAINER NAME] -p [HOST PORT]:3838 -v [PATH TO FOLDER]/:/srv/shiny-server/app/ -v [PATH TO FOLDER]/logs/:/var/log/shiny-server/ jjsaxio/axioshiny:latest
+docker run -dit --name=[CONTAINER NAME] -p [HOST PORT]:3838 -v [PATH TO FOLDER]/:/srv/shiny-server/ -v [PATH TO FOLDER]/:/var/log/shiny-server/ jjsaxio/axioshiny:latest
 ```
 
 The host port can be the same as the container's port.
@@ -24,7 +24,7 @@ Go to ```localhost:[HOST PORT]``` to access the shiny app server.
 [Plumber](https://www.rplumber.io/) APIs are now available to use with the Shiny server! This provides some optional ```docker run``` parameters. Still use the above command if you are not using Plumber, otherwise use the following to start a Plumber API:
 
 ```
-docker run -dit --name=[CONTAINER NAME] -p [HOST PORT]:3838 -p 40000:40000 -v [PATH TO FOLDER]/:/srv/shiny-server/app/ -v [PATH TO FOLDER]/logs/:/var/log/shiny-server/ -e "APP_SERVER=[SERVER NAME]" -e "PLUMBER=[PLUMBER FILE LOCATION]" jjsaxio/axioshiny:devel
+docker run -dit --name=[CONTAINER NAME] -p [HOST PORT]:3838 -p 40000:40000 -v [PATH TO FOLDER]/:/srv/shiny-server/ -v [PATH TO FOLDER]/:/var/log/shiny-server/ -e "APP_SERVER=[SERVER NAME]" -e "PLUMBER=[PLUMBER FILE LOCATION]" jjsaxio/axioshiny:devel
 ```
 
 __Explanation of new parameters:__
