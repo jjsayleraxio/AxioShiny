@@ -1,7 +1,7 @@
 <img align="right" src="https://raw.githubusercontent.com/jjsayleraxio/AxioShiny/master/images/axio-logo.png">
+<br>
 
 # AxioShiny 
-
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/jjsayleraxio/AxioShiny?logo=github&style=flat)
 [![GitHub issues](https://img.shields.io/github/issues/jjsayleraxio/AxioShiny?logo=github&style=flat)](https://github.com/jjsayleraxio/AxioShiny/issues)
 ![Docker Build Status](https://img.shields.io/docker/build/jjsaxio/axioshiny?logo=docker&style=flat)
